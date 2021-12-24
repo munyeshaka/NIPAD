@@ -32,6 +32,9 @@ body {
     transform: scale(1.5);
 }
 
+
+/* card itesa ya iduza aka oppake keza: color */
+
 img {
     width: 100%;
     height: 300px
@@ -56,7 +59,7 @@ img {
 
 .image .overlay::before {
     content: "";
-    background: #ffff;
+    background: green;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -69,7 +72,7 @@ img {
 }
 
 .image:hover .overlay {
-    color: black
+    color: yellow
 }
 
 .container .image:hover .overlay .amount,
@@ -78,7 +81,7 @@ img {
 .container .image:hover .overlay .fa-star,
 .container .image:hover .overlay .fa-star-half-alt,
 .container .image:hover .overlay .review {
-    color: black
+    color: yellow
 }
 
 .image:hover .overlay::before {
