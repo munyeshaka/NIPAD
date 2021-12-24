@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>NIPAD</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top " id="bg-menu">
+        <div class="container-lg">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'logo.png' %}" alt="NIPAD" width="50px" height="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'nipadapp:home' %}">Acceuil</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'nipadapp:propos' %}">A Propos</a>
+            </li>
+    
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="{% url 'nipadapp:home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Nos services
+                    <b class="caret"></b>
+                </a>
+                <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Aux investisseurs/PAD</a>
+                    <a class="dropdown-item" href="#">Aux ONGs/Sociétés privés</a>
+                    <a class="dropdown-item" href="#">Aux individus porteurs de projets</a>
+                    <a class="dropdown-item" href="#">Aux chercheurs d'emplois</a>
+                    <a class="dropdown-item" href="#">Aux entrepreneurs/Hommes d'affaires</a>
+                    
+                </li>
+    
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'nipadapp:regions' %}">Regions</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'nipadapp:program' %}">Projets/Programmes</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'nipadapp:rejoindre' %}">Nous Rejoindre</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'nipadapp:contactes' %}">Contactes</a>
+            </li>
+    
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
+
+  
+
+
+<body>
+
+    {% block content%}
+
+    {% endblock %}
+      
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+
+</body>
+
+
+<!-- Footer -->

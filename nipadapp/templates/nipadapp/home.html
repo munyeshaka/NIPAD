@@ -1,0 +1,134 @@
+
+{% extends 'nipadapp/base_layout.html' %} <!--namspace of templates-->
+{% load static %}
+
+{% block content %}
+<br>
+<br>
+<br>
+    <div class="card">
+        
+        <div class="card shadow text-white" style="background: black;
+        overflow: hidden;" >
+    
+        <img src="{% static 'default.png' %}" class="ratio ratio-1x1" style="object-fit: cover;
+        opacity: 0.4;" alt="Little nipadapp Burundi">
+
+        <div class="overlay-content align-items-end text-white">
+
+            <div class="col-md-3 text-center my-auto">
+                <div class="card-img-overlay card-body align-items-center col-md d-flex justify-content-center">
+
+                    <div class="inner">
+                        <div class="card-body" id="zoomText">
+                            <h1 class="card-title" data-mdb-animation="zoom-in" >Little nipadapp Burundi</h1>
+                            <br>
+                            <h4 class="card-text">Proclaim the Kingdom that has come through death and resurrection of Jesus Christ,</h4>
+                            <h4 class="card-text">portray its present glory and point to its full glory that is to come.</h4>
+                            <br>
+                            <a href="{% url 'nipadapp:program' %}" style="background-color:#c9ae60; color:white;" class="btn">Nos Programmes</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+
+    <!-- =============ABOUT US===============-->
+ {% comment %} <div class="container marketing"> {% endcomment %}
+    <div class="container">
+        <div class="row shadow m-6 justify-content-center">
+            <div class="col-md-6 p-3">
+                <h2 class="fw-bold fs-1">A Propos</h2>
+                <P>We are a covenanted spiritual family that desires and pursues a Trinitarian fullness , for a lasting impact to the glory of God, our joy in Jesus Christ.
+
+                    Trinitarian fullness: <br>
+                    - Rooted in the Word of Christ<br>
+                    - Filled with the Power of the Holy Spirit <br>
+                    - Ablaze with love for the Father</P>
+                    
+                        <a href="{% url 'nipadapp:program' %}" style="color:white;" class="btn btn-success">Nos Programmes</a>
+                    
+            </div>
+            <div class="col-md-6 ">
+                <div class="inner">
+                    <img src="{% static 'default.png' %}" class="w-100" style="max-width: 100%; height: auto;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- ===============End About Us=========-->
+
+<br>
+    <div class="container">
+        
+        <div class="row justify-content-center">
+                <h2 class="card-title ">Special title treatment</h2>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content, With supporting text below as a natural lead-in to additional content, With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+    <br>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <div class="image"> <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <div class="overlay">
+                        <p class="amount">$399</p>
+                        <p class="h4">Group Tour in Maldives</p>
+                        <p class="textmuted">Ameeru Ahmed magu male,female</p>
+                        <ul class="list-unstyled d-flex ">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star-half-alt"><span class="ms-2 review">500 reviews</span> </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <div class="image"> <img src="https://images.pexels.com/photos/2659475/pexels-photo-2659475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <div class="overlay">
+                        <p class="amount">$399</p>
+                        <p class="h4">Group Tour in Maldives</p>
+                        <p class="textmuted">Ameeru Ahmed magu male,female</p>
+                        <ul class="list-unstyled d-flex ">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star-half-alt"><span class="ms-2 review">500 reviews</span> </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <div class="image"> <img src="https://images.pexels.com/photos/4388165/pexels-photo-4388165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <div class="overlay">
+                        <p class="amount">$399</p>
+                        <p class="h4">Group Tour in Maldives</p>
+                        <p class="textmuted">Ameeru Ahmed magu male,female</p>
+                        <ul class="list-unstyled d-flex ">
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star"></span></li>
+                            <li><span class="fas fa-star-half-alt"><span class="ms-2 review">500 reviews</span> </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+{% endblock %}
