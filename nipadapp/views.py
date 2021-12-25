@@ -21,3 +21,6 @@ def rejoindre(request):
 
 def contactes(request):
     return render(request, 'nipadapp/contactes.html')
+
+def services(request):
+    return render(request, 'nipadapp/services.html')

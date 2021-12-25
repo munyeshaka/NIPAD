@@ -12,5 +12,6 @@ urlpatterns = [
     re_path(r'^program/', views.program, name='program'),
     re_path(r'^rejoindre/', views.rejoindre, name='rejoindre'),
     re_path(r'^contactes/', views.contactes, name='contactes'),
+    re_path(r'^services/', views.services, name='services'),
 
 ]
