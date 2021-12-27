@@ -15,3 +15,5 @@ class AdminArticle(admin.ModelAdmin):
 
 
 admin.site.register(Article,AdminArticle)
+
+admin.site.register(Customer)

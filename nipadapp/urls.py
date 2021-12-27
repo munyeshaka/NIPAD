@@ -1,6 +1,7 @@
-from django.urls import re_path
+from django.urls import path, re_path
 
 from .import views
+from .views import CutomerNumJsonView
 
 app_name = 'nipadapp'
 
@@ -13,5 +14,6 @@ urlpatterns = [
     re_path(r'^rejoindre/', views.rejoindre, name='rejoindre'),
     re_path(r'^contactes/', views.contactes, name='contactes'),
     re_path(r'^services/', views.services, name='services'),
+    path('customers-json/', CutomerNumJsonView.as_view(), name='customers-json'),
 
 ]

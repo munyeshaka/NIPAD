@@ -1,5 +1,6 @@
 from django.db import models
 import datetime
+from django.db.models.fields import BooleanField
 from django.template.defaultfilters import slugify # for auto-slug _  #pip install python-slugify
 
 
@@ -26,3 +27,10 @@ class Article(models.Model):
 
     def snippet(self):
         return self.body[:100] +'...'
+
+class Customer(models.Model):
+    name = models.CharField(max_length=80)
+    active = BooleanField(default=True)
+
+    def __str__(self):
+        return str(self.name)

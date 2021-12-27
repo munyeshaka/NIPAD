@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView, View
+from .models import*
+from django.http import JsonResponse
 
 # Create your views here.
 
@@ -24,3 +27,8 @@ def contactes(request):
 
 def services(request):
     return render(request, 'nipadapp/services.html')
+
+class CutomerNumJsonView(View):
+    def get(self, *args, **kwargs):
+        customer_count = Customer.objects.filter(active=True).count()
+        return JsonResponse({'customer_count':customer_count})
